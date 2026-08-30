@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://s4x8fmp33qge"]
+
+[ext_resource type="Script" uid="uid://b8gt5dnkf7yi6" path="res://scripts/players_manager.gd" id="1_j4k85"]
+[ext_resource type="PackedScene" uid="uid://8y6n0f51vg54" path="res://scenes/players/player_1.tscn" id="2_k38wr"]
+[ext_resource type="PackedScene" uid="uid://nbgj5x4xvh5e" path="res://scenes/players/player_2.tscn" id="3_rs3sp"]
+[ext_resource type="PackedScene" uid="uid://dk2467s84a77x" path="res://scenes/MultiplayerCamera.tscn" id="4_lew6q"]
+
+[node name="Players" type="Node2D" unique_id=1753759059]
+script = ExtResource("1_j4k85")
+
+[node name="Player1" parent="." unique_id=1500297690 instance=ExtResource("2_k38wr")]
+position = Vector2(0, -144)
+test = "test1"
+
+[node name="Player2" parent="." unique_id=866617092 instance=ExtResource("3_rs3sp")]
+position = Vector2(0, -144)
+test = "test24"
+
+[node name="MultiplayerCamera" parent="." unique_id=268526977 instance=ExtResource("4_lew6q")]

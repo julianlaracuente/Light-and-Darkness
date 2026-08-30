@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cr0jw1imwa6cw"]
+
+[ext_resource type="Script" uid="uid://dyg3fwxcpi0w3" path="res://scripts/rooms_scripts/light.gd" id="1_b2lcf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7rw05"]
+
+[node name="Light" type="Area2D" unique_id=147879970]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_b2lcf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2098817706]
+shape = SubResource("RectangleShape2D_7rw05")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

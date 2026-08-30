@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ds382wnq6tuxb"]
+
+[ext_resource type="Script" uid="uid://bxpy1bdgpsgcn" path="res://scripts/rooms_scripts/room_class.gd" id="1_vefaa"]
+[ext_resource type="PackedScene" uid="uid://cc64iw1got7k8" path="res://scenes/rooms/fade.tscn" id="2_vefaa"]
+[ext_resource type="Script" uid="uid://cmwe5jdkj68fn" path="res://scripts/rooms_scripts/area.gd" id="3_aw4im"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vefaa"]
+size = Vector2(237, 228)
+
+[node name="room_class" type="Node2D" unique_id=429381505]
+script = ExtResource("1_vefaa")
+
+[node name="Fade" parent="." unique_id=1799504811 instance=ExtResource("2_vefaa")]
+
+[node name="ExitLevel" type="Area2D" parent="." unique_id=669153406]
+script = ExtResource("3_aw4im")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitLevel" unique_id=222977649]
+shape = SubResource("RectangleShape2D_vefaa")
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="ExitLevel" to="." method="_on_exit_level_body_entered"]

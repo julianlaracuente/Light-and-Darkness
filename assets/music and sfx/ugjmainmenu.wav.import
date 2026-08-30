@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://oyg2f075m7xu"
+path="res://.godot/imported/ugjmainmenu.wav-35b1ec26e0c47211518d02d997670e9d.sample"
+
+[deps]
+
+source_file="res://assets/music and sfx/ugjmainmenu.wav"
+dest_files=["res://.godot/imported/ugjmainmenu.wav-35b1ec26e0c47211518d02d997670e9d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
